@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyParol.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="MyParol Logo">
+                <div class="text-content">
+                <h1>MyParol.com</h1>
+                <p>Bamboo Parol Kits and Traditional Lighted Filipino Lantern</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2>Illuminate Your Holidays with Authentic Filipino Parols</h2>
+            <p>Handcrafted bamboo kits and pre-assembled traditional lanterns</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product1.jpg" alt="Bamboo Parol Kit">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Parol Kit</h3>
+                        <p>Each kit includes: 10 pcs flat, long bamboo sticks. 3 sheets rice paper. 5 short pegs. String. Glue stick. Instruction sheet.</p>
+                        <div class="product-options">
+                            <select id="size-dropdown-1" class="size-dropdown">
+                                <option value="18-Inch" data-price="15.99" data-shipping="7.47">18-Inch — $15.99 (Shipping: $7.47)</option>
+                                <option value="9-Inch" data-price="12.99" data-shipping="6.47">9-Inch — $12.99 (Shipping: $6.47)</option>
+                            </select>
+                        </div>
+                        <div class="price-container">
+                            <div class="product-price">$15.99</div>
+                            <div class="shipping-price">+ $7.47 shipping</div>
+                        </div>
+                        <div class="total-price">Total: $23.46</div>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Bamboo Parol Kit" data-price="15.99" data-shipping="7.47">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product2.jpg" alt="Traditional Parols">
+                    </div>
+                    <div class="product-info">
+                        <h3>Traditional Parols</h3>
+                        <p>Remote-controlled traditional LED parols. Available in Red, White, Blue, Green, Orange and Yellow cellophane star and tassle. Ring and tassles skirts are all white. Ships in 24″x24″x4″ EM- shielded box.</p>
+                        <div class="price-container">
+                            <div class="product-price">$29.99</div>
+                            <div class="shipping-price">+ $19.47 shipping</div>
+                        </div>
+                        <div class="total-price">Total: $49.46</div>
+                        <button class="add-to-cart-btn" data-id="2" data-name="Traditional Parols" data-price="29.99" data-shipping="19.47">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product3.jpg" alt="Lace Lighted Parols">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lace Lighted Parols</h3>
+                        <p>Remote controlled lace parol. Available in Gold, Silver and Pink Gold. Ships in 24″x24″x4″ EM shielded box.</p>
+                        <div class="price-container">
+                            <div class="product-price">$34.99</div>
+                            <div class="shipping-price">+ $19.47 shipping</div>
+                        </div>
+                        <div class="total-price">Total: $54.46</div>
+                        <button class="add-to-cart-btn" data-id="3" data-name="Lace Lighted Parols" data-price="34.99" data-shipping="19.47">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product4.jpg" alt="Wood Star Parols">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wood Star Parols</h3>
+                        <p>Munfinished 24-inch wood parol with light varnish. Make your own creation with this wood star.</p>
+                        <div class="price-container">
+                            <div class="product-price">$49.99</div>
+                            <div class="shipping-price">+ $15.99 shipping</div>
+                        </div>
+                        <div class="total-price">Total: $65.98</div>
+                        <button class="add-to-cart-btn" data-id="4" data-name="Wood Star Parols" data-price="49.99" data-shipping="15.99">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Filipino Parols</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/aboutpic.jpg" alt="Filipino Parol Tradition">
+                </div>
+                <div class="about-text">
+                    <p>The Filipino parol (from the Spanish word "farol," meaning lantern) is a traditional Christmas decoration in the Philippines, a star-shaped ornament that represents the Star of Bethlehem.</p>
+                    <p>Originally made from bamboo sticks covered with colored paper, modern parols can be crafted from various materials like coconut leaves, plastic, metal, and even LED lights. During the Christmas season, Filipino homes, streets, and buildings are adorned with these colorful symbols of Filipino Christmas spirit.</p>
+                    <p>At MyParol.com, we're dedicated to bringing this beautiful Filipino tradition to homes around the world, with authentic materials and traditional crafting methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be populated here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span id="cart-shipping">$0.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-buttons">
+                <button id="clear-cart" class="btn btn-outline">Clear Cart</button>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PayPal Section -->
+    <section class="payment-section" id="payment-section">
+        <div class="container">
+            <h2 class="section-title">Secure Checkout</h2>
+            <div class="payment-summary">
+                <h3>Order Summary</h3>
+                <div id="payment-items">
+                    <!-- Order items will be displayed here -->
+                </div>
+                <div class="payment-totals">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="payment-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="payment-shipping">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="payment-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-options">
+                <div class="paypal-button">
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>Chicago, IL</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>myparol@yahoo.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About MyParol.com</h3>
+                    <p>MyParol.com is dedicated to bringing authentic Filipino Christmas lanterns to your home, preserving tradition while embracing modern design.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Chicago, IL </p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> myparol@yahoo.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyParol.com. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay for Cart -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
